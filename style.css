@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;700&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: var(--font);
+}
+:root{
+    --BrightRed: hsl(12, 88%, 59%);
+    --DarkBlue: hsl(228, 39%, 23%);
+    --DarkGrayishBlue: hsl(227, 12%, 61%);
+    --VeryDarkBlue: hsl(233, 12%, 13%);
+    --VeryPaleRed: hsl(13, 100%, 96%);
+    --VaryLightGray: hsl(0, 0%, 98%);
+    --font:'Be Vietnam Pro', sans-serif;
+}
+/*global styles*/
+.primaryP{
+    font-weight: 600;
+    font-size: 3rem;
+    color: var(--DarkBlue);
+}
+.primaryP2{
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--DarkBlue);
+}
+.primaryP3{
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: var(--DarkBlue);
+}
+
+.secondaryP{
+    font-weight: 300;
+    color: var(--DarkGrayishBlue);
+    font-size: 1.2rem;
+    padding: 1rem 0 3rem 0;
+}
+section{
+    padding: 1.5rem;
+}
+/*header*/
+.bar{
+    background-color: black;
+    margin: 5px;
+    width: 25px;
+    cursor: pointer;
+    display: non;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.7rem;
+}
+.hamburger{
+    cursor: pointer;
+    background-image: url('images/icon-hamburger.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+}
+.btn{
+    background-color: var(--BrightRed);
+    padding: 7px 10px;
+    border-radius: 15px;
+    color: white;
+    text-transform: capitalize;
+    border: none;
+}
+.link{
+    color: var(--DarkBlue);
+}
+/*sectiona*/
+.section-a{
+    display: grid;
+}
+.section-a img{
+    width: 100%;
+}
+.section-a-btn{
+    align-self: center;
+    justify-self: center;
+}
+/*sectionb*/
+
+.section-b-btn{
+    padding: 7px 15px;
+    font-size: 16px;
+}
+.button{
+    text-align: center;
+}
+.section-c .primaryP2{
+    padding-bottom: 2rem;
+}
+/*sectionb*/
+.section-c .image{
+    text-align: center;
+}
+.dots{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dot{
+    background-color: var(--DarkGrayishBlue);
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+.reviewsBtn{
+    text-align: center;
+    margin-top: 2rem;
+}
+/*sectionb*/
+.section-d{
+    color: white;
+    background-color: var(--BrightRed);
+    padding:5rem 0 ;
+}
+.section-d a{
+    text-align: center;
+    background-color: white;
+    color: var(--BrightRed);
+    margin: 4rem 0;
+    text-align: center;
+}
+.sectionDBtn{
+    text-align: center;
+    padding-top: 2rem;
+}
+.section-d .primaryP2{
+    color: white;
+}
+.footer{
+    text-align: center;
+    padding: 2rem 0;
+    color: white;
+    background-color: var(--DarkBlue);
+}
+.footer a{
+    color: white;
+}
+.email{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    border-radius: 12px;
+    border: none;
+    background-color: white;
+    color: var(--DarkGrayishBlue);
+    margin-right: 1rem;
+}
+.section-c{
+    background-color: var(--VaryLightGray);
+}
+/*media query*/
+@media screen and (max-width:768px){
+    .primaryP2{
+        text-align: center;
+    }
+    .primaryP3{
+        text-align: center;
+    }
+    .login-btn{
+        display: none;
+    }
+    .section-b-content1 .secondaryP{
+        text-align: center;
+    }
+    .linksContainer{
+        display: none;
+        position: absolute;
+        text-align: center;
+        padding:1rem 0;
+        width: 90%;
+        border-radius: 5px;
+        background-color:var(--DarkBlue);
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 100%;
+    }
+    .link-item{
+        padding: 2.5rem 0;
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 1.1rem;
+    }
+    .link-item a{
+        color: white;
+    }
+    .btnContainer{
+        text-align: center;
+    }
+    
+    .socialIcons img{
+        margin-right: 5px;
+    }
+}
+.footer input{
+    padding: 5px;
+}
+.footerLogo .primaryP3{
+    color: white;
+    padding: 0.5rem 0;
+}
+@media  screen and (min-width:768px){
+    .hamburger{
+        display: none;
+    }
+    body{
+        padding-top:1rem;
+    }
+    .linksList{
+        display: flex;
+    }
+    .linksList li{
+        padding: 0 1rem;
+        text-transform: capitalize;
+        color: var(--DarkBlue);
+        font-size: 17px;
+    }
+    
+    .grid2{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-areas: ' t t i i'
+        't t i i';
+    }
+    .section{
+        padding: 2rem 3rem;
+    }
+    .section-a-image{
+        grid-area: i;
+    }
+    .section-a-content{
+        grid-area: t;
+        padding: 7rem 0;
+    }
+    .section-b{
+        text-align: left;
+        display: grid;
+        grid-template-columns: repeat(2,1fr); 
+        grid-gap: 2rem;
+    }
+    .section-b-item1{
+        display: flex;
+    }
+    .section-b-item1 button{
+        margin-right: 2rem;
+    }
+    .section-c{
+        text-align: center;
+    }
+    .review{
+        margin: 0 auto;
+        padding: 0 25rem;
+    }
+    .review .secondaryP{
+        text-align: center;
+    }
+    .section-d{
+        text-align: center;
+        padding: 6rem 0;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 't l l e'
+        't l l e'
+        't l l e'
+        'i l l c';
+       
+    }
+    .email{
+        grid-area: e;
+    }
+    .socialIcons{
+        grid-area: i;
+    }
+    .copy{
+        grid-area: c;
+    }
+    .footer-links{
+        grid-area: l;
+    }
+    .footerLogo{
+        grid-area: t;
+    }
+    .footer-links{
+        column-count: 2;
+    }
+    .footer-links .link-item{
+            padding: 10px 0;
+            text-transform: capitalize;
+            font-weight: 600;
+        }
+    .socialIcons img{
+        margin-right: 10px;
+    }
+}
+
+/*active classes*/
+.hamburger.active{
+    background: url('images/icon-close.svg');
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: black;
+}
+.linksContainer.active{
+    display: block;
+}
+.noScroll{
+    overflow-y: hidden;
+}
+.link-item.active{
+    border-bottom: 2px solid var(--BrightRed);
+}
